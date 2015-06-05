@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TinyMCE</title>
+    <meta charset='<%= ::Rails.application.config.encoding %>' />
+    <meta httpequiv="XUACompatible" content="IE=edge,chrome=1" />
+    <%#= stylesheet_link_tag "tinymce/skins/lightgray/skin.min", :media => "all" %>
+    <%= stylesheet_link_tag "formatting", :media => "all" if Rails.application.assets.find_asset('formatting.css') %>
+    <%= javascript_include_tag 'modernizr-min' %>
+  </head>
+  <body class="tinymce_iframe<%= " #{params[:id]}" if params[:id].present? %>">
+  </body>
+</html>
