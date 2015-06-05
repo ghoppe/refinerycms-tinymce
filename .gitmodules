@@ -1,0 +1,3 @@
+[submodule "tinymce"]
+	path = tinymce
+	url = git@github.com:tinymce/tinymce-dist.git
