@@ -9,7 +9,8 @@ module Refinery
       # set the manifests and assets to be precompiled
       config.to_prepare do
         Rails.application.config.assets.precompile += %w(
-          tinymce/themes/modern/theme.min.js
+          tinymce/themes/modern/theme.js
+          refinery-fix.css
           tinymce.css
           tinymce/skins/lightgray/*
         )
@@ -29,11 +30,11 @@ module Refinery
       end
 
       after_inclusion do
-        %w(tinymce/skins/lightgray/skin.min tinymce).each do |stylesheet|
+        %w(tinymce/skins/lightgray/skin.min refinery-fix).each do |stylesheet|
           Refinery::Core.config.register_visual_editor_stylesheet stylesheet
         end
 
-        %W(refinery/tinymce tinymce/themes/modern/theme.min).each do |javascript|
+        %W(refinery/tinymce tinymce/themes/modern/theme).each do |javascript|
           Refinery::Core.config.register_visual_editor_javascript javascript
         end
 

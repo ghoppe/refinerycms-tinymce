@@ -3,7 +3,10 @@ $(document).on('ready page:load', function(){
   tinymce.init({
     selector: "textarea.visual_editor",
     menubar : false,
-    plugins: ["image", "link"],
+    toolbar:  "undo redo | styleselect | style-p style-h1 style-h2 style-h3 | bold italic | bullist numlist outdent indent | link image | fullscreen | code",
+    content_css : '<%= asset_path "tinymce.scss", :only_path => false %>',
+    plugins: ["image", "link", "fullscreen", "code", "stylebuttons"],
+
 
     file_browser_callback   : function(field_name, url, type, win) {
 
