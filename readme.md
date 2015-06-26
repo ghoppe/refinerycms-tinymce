@@ -8,13 +8,11 @@ This is an extention to Refinery to use TinyMCE as the editor in text fields.
 
 Options set upon initialization can be found in `assets/javascripts/refinery/boot_tinymce.js.erb`. Options have been selected to match the current functionality of the default WYMeditor that is used with Refinery. The only modification to basic TinyMCE formatting tools is the addition of a plugin: `stylebuttons`. This plugin replicates the P/H1/H2/H3 style buttons on the WYMeditor toolbar.
 
-Documentation for customization of the `tinymce.init` function can be ![found here.](http://www.tinymce.com/wiki.php/Configuration)
+Documentation for customization of the `tinymce.init` function can be [found here.](http://www.tinymce.com/wiki.php/Configuration)
 
 This is the first release and a work in progress. The dialog integration needs a bit of refinement so that the dialogs better fit the TinyMCE paradigm.
 
 ## Dialogs that show from TinyMCE
-
-![Refinery Page Editor Link Dialog](http://refinerycms.com/system/images/0000/0636/link-dialog.png)
 
 ### Page Link dialog
 
