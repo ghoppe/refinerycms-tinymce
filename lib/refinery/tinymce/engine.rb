@@ -13,6 +13,11 @@ module Refinery
           refinery-fix.css
           tinymce.css
           tinymce/skins/lightgray/*
+          tinymce/plugins/link/*
+          tinymce/plugins/image/*
+          tinymce/plugins/fullscreen/*
+          tinymce/plugins/code/*
+          tinymce/plugins/stylebuttons/*
         )
       end
 
