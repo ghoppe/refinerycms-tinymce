@@ -39,7 +39,7 @@ module Refinery
           Refinery::Core.config.register_visual_editor_stylesheet stylesheet
         end
 
-        %W(refinery/tinymce tinymce/themes/modern/theme).each do |javascript|
+        %W(refinery/tinymce_manifest tinymce/themes/modern/theme).each do |javascript|
           Refinery::Core.config.register_visual_editor_javascript javascript
         end
 
