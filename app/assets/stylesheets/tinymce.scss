@@ -4,5 +4,10 @@
 @import url(asset-path("application.css"));
 
 body.mce-content-body {
-	margin: 20px;
+  margin: 20px;
+}
+
+html, body {
+  background-image: none !important;
+  background-color: white;
 }

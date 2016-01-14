@@ -1,10 +1,6 @@
 /* Refinery Tweaks
 -------------------------------------------------- */
-#dialog_container, .dialog_container {
-  margin-left: 20px;
-}
-
-body#tinymce.mce-content-body {
+iframe html, iframe body {
   background-image: none;
   background-color: white !important;
 }
