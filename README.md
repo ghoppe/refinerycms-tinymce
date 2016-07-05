@@ -4,6 +4,24 @@ TinyMCE is a platform independent web based Javascript HTML WYSIWYG editor contr
 
 This is an extention to Refinery to use TinyMCE as the editor in text fields.
 
+![](http://img-fotki.yandex.ru/get/94893/203537249.14/0_151ef7_7145b111_orig.png)
+
+## Installation
+
+Replace in Gemfile:
+```
+gem 'refinerycms-wymeditor', ['~> 1.0', '>= 1.0.6']
+```
+with:
+```
+gem 'refinerycms-tinymce', git: 'https://github.com/ghoppe/refinerycms-tinymce'
+```
+And run:
+```
+bundle install
+```
+Restart server.
+
 ## Customization
 
 Options set upon initialization can be found in `assets/javascripts/refinery/boot_tinymce.js.erb`. Options have been selected to match the current functionality of the default WYMeditor that is used with Refinery. The only modification to basic TinyMCE formatting tools is the addition of a plugin: `stylebuttons`. This plugin replicates the P/H1/H2/H3 style buttons on the WYMeditor toolbar.
