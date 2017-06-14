@@ -3,7 +3,7 @@ function init_tinymce_for(jq_selector) {
     selector: jq_selector,
     menubar : false,
     toolbar:  "undo redo | styleselect | style-p style-h1 style-h2 style-h3 | bold italic | bullist numlist outdent indent | link image | fullscreen | code",
-    content_css : '<%= asset_path "tinymce.scss", :only_path => false %>',
+    content_css : '/assets/tinymce.scss',
     plugins: ["image", "link", "fullscreen", "code", "stylebuttons"],
     skin_url: '/assets/tinymce/skins/lightgray',
 
@@ -11,10 +11,10 @@ function init_tinymce_for(jq_selector) {
 
         if (type == 'image') {
           var title_text = "Choose an Image"
-          var cmsURL     = '/refinery/dialogs/image';
+          var cmsURL     = '/admin/dialogs/image';
         } else {
           var title_text = "Choose Object to Link"
-          var cmsURL     = '/refinery/dialogs/link';
+          var cmsURL     = '/admin/dialogs/link';
         }
 
         tinymce.activeEditor.windowManager.open({
