@@ -38,19 +38,21 @@ $(document).on('ready page:load', function(){
   init_tinymce_for("textarea.visual_editor")
 
   $('#submit_button').on('click', function(event){
-    var args           = top.tinymce.activeEditor.windowManager.getParams();
-    win                = (args.window);
-    input              = (args.input);
-    dialog_type        = $('#visual_editor_dialog_type', window.parent.document).val();
+    if (top.tinymce.activeEditor.windowManager && top.tinymce.activeEditor.windowManager.getParams()) {
+      var args           = top.tinymce.activeEditor.windowManager.getParams();
+      win                = (args.window);
+      input              = (args.input);
+      dialog_type        = $('#visual_editor_dialog_type', window.parent.document).val();
 
-    if (dialog_type == 'link') {
-      selector = "#visual_editor_href";
-    } else {
-      selector = "#visual_editor_src";
+      if (dialog_type == 'link') {
+        selector = "#visual_editor_href";
+      } else {
+        selector = "#visual_editor_src";
+      }
+      win.document.getElementById(input).value = $(selector, window.parent.document).val();
+      // window.alert( JSON.stringify(args) );
+      top.tinymce.activeEditor.windowManager.close();
     }
-    win.document.getElementById(input).value = $(selector, window.parent.document).val();
-    // window.alert( JSON.stringify(args) );
-    top.tinymce.activeEditor.windowManager.close();
   });
 
 });
