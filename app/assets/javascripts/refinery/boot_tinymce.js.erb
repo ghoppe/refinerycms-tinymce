@@ -38,7 +38,9 @@ $(document).on('ready page:load', function(){
   init_tinymce_for("textarea.visual_editor")
 
   $('#submit_button').on('click', function(event){
-    if (top.tinymce.activeEditor.windowManager && top.tinymce.activeEditor.windowManager.getParams()) {
+    if (top.tinymce.activeEditor
+      && top.tinymce.activeEditor.windowManager
+      && top.tinymce.activeEditor.windowManager.getParams()) {
       var args           = top.tinymce.activeEditor.windowManager.getParams();
       win                = (args.window);
       input              = (args.input);
