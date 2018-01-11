@@ -1,6 +1,7 @@
 module Refinery
   module Tinymce
     require 'refinery/tinymce/engine'
+    require 'refinery/tinymce/configuration'
 
     class << self
       def root
