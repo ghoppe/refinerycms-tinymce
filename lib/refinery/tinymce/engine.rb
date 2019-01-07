@@ -18,6 +18,7 @@ module Refinery
           tinymce/plugins/fullscreen/*
           tinymce/plugins/code/*
           tinymce/plugins/stylebuttons/*
+          refinery/tinymce_manifest.js
         )
       end
 

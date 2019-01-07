@@ -9,6 +9,7 @@ end
 
 gem 'sqlite3'
 gem 'pry'
+gem 'listen'
 
 group :development, :test do
   gem 'selenium-webdriver', '~> 2.43'
