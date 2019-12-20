@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     refinerycms-tinymce (5.1.4)
-      refinerycms-core (~> 4.0.3)
+      refinerycms-core (>= 3.0.0)
 
 GEM
   remote: https://rubygems.org/
@@ -116,6 +116,9 @@ GEM
       thor (>= 0.14, < 2.0)
     jquery-ui-rails (5.0.5)
       railties (>= 3.2.16)
+    listen (3.2.1)
+      rb-fsevent (~> 0.10, >= 0.10.3)
+      rb-inotify (~> 0.9, >= 0.9.10)
     loofah (2.4.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -133,7 +136,7 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
     public_suffix (4.0.1)
-    rack (2.0.7)
+    rack (2.0.8)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails-controller-testing (0.1.1)
@@ -277,6 +280,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  listen
   pry
   refinerycms
   refinerycms-testing
