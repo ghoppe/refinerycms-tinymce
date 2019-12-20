@@ -12,12 +12,15 @@ module Refinery
           tinymce/themes/modern/theme.js
           refinery-fix.css
           tinymce.css
-          tinymce/skins/lightgray/*
+          tinymce/skins/content/default/*
+          tinymce/skins/ui/oxide/*
           tinymce/plugins/link/*
           tinymce/plugins/image/*
           tinymce/plugins/fullscreen/*
           tinymce/plugins/code/*
           tinymce/plugins/stylebuttons/*
+          tinymce/plugins/refineryimage/*
+          tinymce/plugins/refinerylink/*
         )
       end
 
@@ -35,11 +38,11 @@ module Refinery
       end
 
       after_inclusion do
-        %w(tinymce/skins/lightgray/skin.min refinery-fix).each do |stylesheet|
+        %w(tinymce/skins/content/default/content.min refinery-fix).each do |stylesheet|
           Refinery::Core.config.register_visual_editor_stylesheet stylesheet
         end
 
-        %W(refinery/tinymce_manifest tinymce/themes/modern/theme).each do |javascript|
+        %W(refinery/tinymce_manifest tinymce/themes/silver/theme).each do |javascript|
           Refinery::Core.config.register_visual_editor_javascript javascript
         end
 

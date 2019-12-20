@@ -1,5 +1,5 @@
 Refinery::FastController.class_eval do
   def tinymceiframe
-    render :template => "/refinery/tinymceiframe", :layout => false
+    render template: "/refinery/tinymceiframe", layout: false
   end
 end

@@ -2,10 +2,10 @@
 Gem::Specification.new do |s|
   s.platform          = Gem::Platform::RUBY
   s.name              = %q{refinerycms-tinymce}
-  s.version           = '1.0.0'
+  s.version           = '5.1.4'
   s.summary           = %q{TinyMCE support for Refinery CMS}
   s.description       = %q{This extension adds TinyMCE editor to Refinery CMS for visual editing.}
-  s.email             = %q{ghoppe@gmail.com}
+  s.email             = %q{mail@ghoppe.ca}
   s.homepage          = %q{http://refinerycms.com}
   s.authors           = ['Glenn Hoppe']
   s.license           = %q{MIT}
@@ -14,5 +14,5 @@ Gem::Specification.new do |s|
   s.files             = `git ls-files`.split("\n")
   s.test_files        = `git ls-files -- spec/*`.split("\n")
 
-  s.add_dependency    'refinerycms-core', '~> 3.0', '>= 3.0.0'
+  s.add_dependency    'refinerycms-core', '~> 4.0.3'
 end
