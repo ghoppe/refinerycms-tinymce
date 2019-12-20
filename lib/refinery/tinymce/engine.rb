@@ -21,6 +21,7 @@ module Refinery
           tinymce/plugins/stylebuttons/*
           tinymce/plugins/refineryimage/*
           tinymce/plugins/refinerylink/*
+          refinery/tinymce_manifest.js
         )
       end
 
