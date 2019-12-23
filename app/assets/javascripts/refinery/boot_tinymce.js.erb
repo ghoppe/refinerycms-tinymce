@@ -3,6 +3,7 @@ function init_tinymce_for(jq_selector) {
     selector: jq_selector,
     extended_valid_elements: 'i[*]',
     menubar: false,
+    base_url: '/assets/tinymce'
     toolbar: "undo redo | styleselect | style-p style-h1 style-h2 style-h3 | bold italic | bullist numlist outdent indent | refinerylink refineryimage | fullscreen | code",
     content_css: '<%= asset_path "tinymce.scss", only_path: false %>',
     plugins: ["image", "link", "lists", "fullscreen", "code", "stylebuttons", "refineryimage", "refinerylink"],
