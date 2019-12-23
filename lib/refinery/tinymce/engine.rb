@@ -18,6 +18,7 @@ module Refinery
           tinymce/plugins/image/*
           tinymce/plugins/fullscreen/*
           tinymce/plugins/code/*
+          tinymce/plugins/lists/*
           tinymce/plugins/stylebuttons/*
           tinymce/plugins/refineryimage/*
           tinymce/plugins/refinerylink/*

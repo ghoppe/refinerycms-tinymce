@@ -12,6 +12,7 @@
  *= require tinymce/plugins/link/plugin.min.js
  *= require tinymce/plugins/image/plugin.min.js
  *= require tinymce/plugins/fullscreen/plugin.min.js
+ *= require tinymce/plugins/lists/plugin.min.js
  *= require tinymce/plugins/code/plugin.min.js
  *= require tinymce/plugins/stylebuttons/plugin.min.js
  *= require tinymce/plugins/refineryimage/plugin.min.js
