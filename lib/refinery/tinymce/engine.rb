@@ -6,13 +6,21 @@ module Refinery
       isolate_namespace Refinery
       engine_name :refinery_tinymce
 
+      # Add vendor assets to the asset pipeline
+      initializer 'refinery.tinymce.assets' do |app|
+        app.config.assets.paths << root.join('vendor', 'assets', 'javascripts').to_s
+        app.config.assets.paths << root.join('vendor', 'assets', 'stylesheets').to_s
+      end
+
       # set the manifests and assets to be precompiled
       config.to_prepare do
         Rails.application.config.assets.precompile += %w(
-          tinymce/themes/modern/theme.js
+          tinymce/themes/silver/*
           tinymce.css
-          tinymce/skins/content/default/*
-          tinymce/skins/ui/oxide/*
+          tinymce/skins/content/**/*
+          tinymce/skins/ui/**/*
+          tinymce/models/**/*
+          tinymce/icons/**/*
           tinymce/plugins/link/*
           tinymce/plugins/image/*
           tinymce/plugins/fullscreen/*

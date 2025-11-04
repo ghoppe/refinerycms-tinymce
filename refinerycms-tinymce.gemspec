@@ -2,7 +2,7 @@
 Gem::Specification.new do |s|
   s.platform          = Gem::Platform::RUBY
   s.name              = %q{refinerycms-tinymce}
-  s.version           = '5.1.4'
+  s.version           = '7.6.0'
   s.summary           = %q{TinyMCE support for Refinery CMS}
   s.description       = %q{This extension adds TinyMCE editor to Refinery CMS for visual editing.}
   s.email             = %q{mail@ghoppe.ca}

@@ -8,9 +8,9 @@
 */
 /*
  *= require tinymce/tinymce.min.js
- *= require tinymce/jquery.tinymce.min.js
  *= require tinymce/themes/silver/theme.min.js
- *= require tinymce/themes/mobile/theme.min.js
+ *= require tinymce/icons/default/icons.min.js
+ *= require tinymce/models/dom/model.min.js
  *= require tinymce/plugins/link/plugin.min.js
  *= require tinymce/plugins/image/plugin.min.js
  *= require tinymce/plugins/fullscreen/plugin.min.js
