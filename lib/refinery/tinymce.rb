@@ -1,3 +1,5 @@
+require 'tinymce-rails'
+
 module Refinery
   module Tinymce
     require 'refinery/tinymce/engine'

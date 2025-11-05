@@ -10,6 +10,16 @@ module Refinery
       initializer 'refinery.tinymce.assets' do |app|
         app.config.assets.paths << root.join('vendor', 'assets', 'javascripts').to_s
         app.config.assets.paths << root.join('vendor', 'assets', 'stylesheets').to_s
+        
+        # Add tinymce-rails gem assets to the asset pipeline
+        begin
+          tinymce_root = Gem::Specification.find_by_name('tinymce-rails').gem_dir
+          app.config.assets.paths << File.join(tinymce_root, 'vendor', 'assets', 'javascripts')
+          app.config.assets.paths << File.join(tinymce_root, 'app', 'assets', 'sprockets')
+          app.config.assets.paths << File.join(tinymce_root, 'app', 'assets', 'javascripts')
+        rescue Gem::LoadError
+          Rails.logger.warn "tinymce-rails gem not found"
+        end
       end
 
       # set the manifests and assets to be precompiled
