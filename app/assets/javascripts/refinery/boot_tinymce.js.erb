@@ -5,6 +5,7 @@ function init_tinymce_for(jq_selector) {
     menubar: false,
     base_url: '/assets/tinymce',
     suffix: '.min',
+    skin_url: '<%= asset_path "tinymce/skins/ui/oxide", only_path: true %>',
     toolbar: "undo redo | styleselect | style-p style-h1 style-h2 style-h3 | bold italic | bullist numlist outdent indent | refinerylink refineryimage | fullscreen | code",
     content_css: '<%= asset_path "tinymce.css", only_path: false %>',
     plugins: ["image", "link", "lists", "fullscreen", "code", "stylebuttons", "refineryimage", "refinerylink"],
