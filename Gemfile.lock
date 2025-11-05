@@ -3,6 +3,7 @@ PATH
   specs:
     refinerycms-tinymce (7.6.0)
       refinerycms-core (>= 3.0.0)
+      tinymce-rails (~> 8.0)
 
 GEM
   remote: https://rubygems.org/
@@ -308,6 +309,8 @@ GEM
     thor (1.4.0)
     thread_safe (0.3.6)
     tilt (2.6.1)
+    tinymce-rails (8.2.0)
+      railties (>= 3.1.1)
     truncate_html (0.9.3)
     tzinfo (1.2.11)
       thread_safe (~> 0.1)
