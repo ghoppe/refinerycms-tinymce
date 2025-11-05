@@ -15,4 +15,5 @@ Gem::Specification.new do |s|
   s.test_files        = `git ls-files -- spec/*`.split("\n")
 
   s.add_dependency    'refinerycms-core', '>= 3.0.0'
+  s.add_dependency    'tinymce-rails', '~> 8.0'
 end
